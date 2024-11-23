@@ -1,0 +1,198 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('https://img.freepik.com/free-photo/top-view-office-concept-with-copy-space_23-2148223067.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    color: rgb(17, 12, 46);
+    font-weight: 900;
+    text-align: center;
+    padding: 150px 20px;
+    opacity:
+}
+
+#hero .hero-content {
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 2s ease;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#hero .shop-now {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#hero .shop-now:hover {
+    background-color: #e65c00;
+}
+
+/* Featured Accessories Section */
+#featured {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#featured h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.featured-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.featured-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.featured-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #0056b3;
+}
+
+/* Special Deals Section */
+#deals {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#deals h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.deals-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.deal-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 2s ease;
+}
+
+.shop-deal {
+    background-color: #28a745;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-deal:hover {
+    background-color: #218838;
+}
+
+/* Customer Reviews Section */
+#reviews {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#reviews h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

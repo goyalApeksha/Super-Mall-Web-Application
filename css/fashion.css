@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Sidebar: 200px, Content: Remaining space */
+    height: 100vh; /* Full screen height */
+}
+
+.content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    /* cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px; */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li.tab.active a {
+    color: #fff; /* Highlight the active tab */
+    font-weight: bold;
+    background-color: #555; /* Add background to distinguish the active tab */
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.sidebar li:hover {
+    background-color: #000000;
+}
+
+.sidebar li.active {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #fff;
+}
+
+/* .content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+} */
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+

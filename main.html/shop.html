@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+
+<body>
+    <!-- Shop Page / Categories Section -->
+    <section id="shop" class="section-p1">
+        <h2>Shop All Products</h2>
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="groceries">Groceries</option>
+                <option value="footwear">Footwear</option>
+            </select>
+
+            <select id="sort-options">
+                <option value="popularity">Sort by Popularity</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="product-container">
+            <div class="product" data-category="electronics">
+                <a href="smartphone.html">
+                <img src="https://images.unsplash.com/photo-1663314326611-9e2fd4f11b1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGFwcGxlJTIwaXBob25lfGVufDB8fDB8fHww" alt="Product 1" >
+                <h5>Smartphone</h5>
+                <p><span class="strike">59000 </span>&#8377 47000</p>
+                </a>
+            </div>
+            <div class="product" data-category="clothing">
+                <a href="denim.html">
+                <img src="https://img.freepik.com/free-photo/beautiful-smiling-woman-denim-clothing-isolated-white-wall_231208-9644.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Product 2" >
+                <h5>Denim Jacket</h5>
+                <p><span class="strike">2000 </span>&#8377 1499</p>
+            </a>
+            </div>
+            <div class="product" data-category="groceries">
+                <a href="organic.html">
+                <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHZlZ2V0YWJsZXN8ZW58MHx8MHx8fDA%3D" alt="Product 3" >
+                <h5>Organic Vegetables</h5>
+                <p><span class="strike">500 </span>&#8377 400</p>
+            </a>
+            </div>
+            <div class="product" data-category="electronics">
+                <a href="headphone.html">
+                <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlYWRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 4" >
+                <h5>Headphone</h5>
+                <p><span class="strike">1700 </span>&#8377 1500</p>
+                </a>
+            </div>
+            <div class="product" data-category="clothing">
+                <a href="Tshirt.html">
+                <img src="https://img.freepik.com/free-photo/beautiful-smiling-brunette-girl-pointing-fingers-your-logo-showing-something-center_1258-18999.jpg?t=st=1732020588~exp=1732024188~hmac=6b2403454a7c3b71034fefb0b9f197be7403daace1393c780b764cb57fda8cb6&w=996" alt="Product 5" >
+                <h5>T-Shirt</h5>
+                <p><span class="strike">599 </span>&#8377 399</p>
+                </a>
+            </div>
+            <div class="product" data-category="electronics">
+                <a href="laptop1.html">
+                <img src="https://img.freepik.com/free-photo/open-laptop-desk-online-study-screen_1163-2578.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Product 6">
+                <h5>Laptop</h5>
+                <p><span class="strike">70,000 </span>&#8377 63000</p>
+            </a>
+            </div>
+            <div class="product" data-category="clothing">
+                <a href="formal.html">
+                <img src="https://img.freepik.com/free-photo/high-angle-handsome-business-man_23-2148479581.jpg?t=st=1732021181~exp=1732024781~hmac=93228395d99779c224efda8b883c72142bf03402c1be45ead056f6e5270e60be&w=996" alt="Product 7">
+                <h5>Formal wear</h5>
+                <p>from &#8377 399</p>
+                </a>
+            </div>
+            <div class="product" data-category="clothing">
+                <a href="casual.html">
+                <img src="https://img.freepik.com/free-photo/brutal-man-outside_1303-9106.jpg?t=st=1732021367~exp=1732024967~hmac=1c6fca68f9b791829cb231999c6e02631ddeaf5321d18357fdfdc56eb325a0ad&w=996" alt="Product 8">
+                <h5>casual wear</h5>
+                <p>from &#8377 299</p>
+                </a>
+            </div>
+            <div class="product" data-category="footwear">
+                <a href="heel.html">
+                <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 9">
+                <h5>Heels</h5>
+                <p><span class="strike">799 </span>&#8377 588</p>
+            </a>
+            </div>
+            <div class="product" data-category="footwear">
+                <a href="flip.html">
+                <img src="https://img.freepik.com/free-photo/leather-shoes-sandal_1203-7616.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Product 10">
+                <h5>flip-flop</h5>
+                <p><span class="strike">299 </span>&#8377 199</p>
+            </a>
+            </div>
+            <div class="product" data-category="footwear">
+                <a href="shoes.html">
+                <img src="https://img.freepik.com/free-photo/shoes_1203-8154.jpg?t=st=1732021829~exp=1732025429~hmac=340cc3d8aceee48a65faa2443c8a82c420d2ea61d4dd8b6dd067d250dc219658&w=996" alt="Product 11">
+                <h5>shoes</h5>
+                <p><span class="strike">1899 </span>&#8377 1449</p>
+                </a>
+            </div>
+            <div class="product" data-category="clothing">
+                <a href="dress.html">
+                <img src="https://img.freepik.com/free-photo/woman-bridal-boutique_1398-3522.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Product 12">
+                <h5>Dress</h5>
+                <p><span class="strike">799 </span>&#8377 549</p>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/shop.js"></script>
+</body>
+</html>

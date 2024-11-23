@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Page</title>
+    <link rel="stylesheet" href="/css/fashion.css">
+    <link rel="stylesheet" href="/css/men.css">
+    <link rel="stylesheet" href="/css/women.css">
+</head>
+<body>
+
+    <!--Page Container-->
+    <div class="page-container">
+        <!--Sidebar-->
+        <nav class="sidebar">
+            <ul>
+                <li id="men-tab" class="active" onclick="togglePage('men')">
+                    ➤ Men's Page
+                </li>
+                <li id="women-tab" onclick="togglePage('women')">
+                    ➤ Women's Page
+                </li>
+            </ul>
+        </nav>
+
+        <!--  Main Content  -->
+        <main class="content">
+            <div id="men-page" class="page active">
+                <!-- Header -->
+    <header>
+        <div class="logo">Men's Wear</div>
+        <nav>
+            <a class="active" href="ecomm.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="#about">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-men">
+        <h1>Redefine Your Wardrobe</h1>
+        <p>Explore the latest trends in men's fashion.</p>
+        <button id="shop-now-btn-men">Shop Now</button>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="section-men">
+        <h2>Featured Collections</h2>
+        <div class="collections-men">
+            <a href="shop.html" class="collection-item-men">
+                <img src="https://media.istockphoto.com/id/825083570/photo/latin-man-standing.jpg?s=612x612&w=0&k=20&c=nmCX-5Uo7fBFoUVR2vcHbbSdaDYXngxy60ElEC5uHtw=" alt="Smart Casuals">
+                <p>Smart Casuals</p>
+            </a>
+            <a href="shop.html" class="collection-item-men">
+                <img src="https://media.istockphoto.com/id/1195166190/photo/male-model-in-a-blue-suit-casual-outfit.jpg?s=612x612&w=0&k=20&c=-5adFLpcsV7c2Y0GFSlB-m2c7x4j5gHR_l56IrpFtjU=" alt="Formal Attire">
+                <p>Formal Attire</p>
+            </a>
+            <a href="shop.html" class="collection-item-men">
+                <img src="https://media.istockphoto.com/id/2155498294/photo/man-exercising-with-fitness-ball-in-gym.jpg?s=612x612&w=0&k=20&c=6mxi8iiTwmQ9YanjYAsBq69ymkOidCdwroCGBPZS-WU=" alt="Athleisure">
+                <p>Athleisure</p>
+            </a>
+            <a href="shop.html" class="collection-item-men">
+                <img src="https://media.istockphoto.com/id/626856944/photo/man-clothing.jpg?s=612x612&w=0&k=20&c=hqccWowzKSXqaPIGhuXcZyNq9TCQ1ADSOv3u7_on6wo=" alt="Seasonal Collection">
+                <p>Seasonal Collection</p>
+            </a>
+        </div>
+    </section>
+    
+    <section class="section-men">
+        <h2>Trending Now</h2>
+        <div class="trending-men">
+            <a href="#" class="trending-item-men">
+                <img src="https://media.istockphoto.com/id/1776475600/photo/indoor-portrait-of-a-stylish-man.webp?a=1&b=1&s=612x612&w=0&k=20&c=I5d2cuTOz_FiW_hZ-2MO_m3fpinzvQM7NhOOXWdTf1A=" alt="Trending Item 4">
+                <p>Bold and Casual</p>
+            </a>
+            <a href="#" class="trending-item-men">
+                <img src="https://images.unsplash.com/photo-1623756597226-caa7154b4306?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fHww" alt="Trending Item 1" >
+    
+                <p>Minimalist Fashion</p>
+            </a>
+            <a href="#" class="trending-item-men">
+                <img src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fHww" alt="Trending Item 3">
+                <p>Essentially Trendy</p>
+            </a>
+            <a href="#" class="trending-item-men">
+            
+                <img src="https://images.unsplash.com/photo-1552168212-9ceb61083ba0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D" alt="Trending Item 2">
+                <p>All-Day Comfort</p>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Featured Brands -->
+    <section class="section brands-men">
+        <h2>Featured Brands</h2>
+        <div class="brand-logos-men">
+            <img src="https://img.freepik.com/free-photo/man-wearing-street-style-full-shot_23-2148323624.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="gucci Brand 1">
+            <img src="https://img.freepik.com/free-photo/portrait-handsome-guy-holding-shopping-bags-hand-standing-front-window-display_23-2147968369.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="H&M Brand 2">
+            <img src="https://img.freepik.com/free-photo/man-with-bag-outside_1303-5832.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="balanciaga Brand 3">
+            <img src="https://img.freepik.com/free-photo/handsome-adult-man-holding-shopping-bags_23-2148316141.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Brand 4">
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section reviews-men">
+        <h2>What Our Customers Say</h2>
+        <div class="review-men">
+            <p>"Great quality clothing and fast shipping. Highly recommend!"</p>
+            <span>- Barber</span>
+        </div>
+        <div class="review-men">
+            <p>"The best shopping experience I've had online. The clothes fit perfectly."</p>
+            <span>- Piyush Makhloha</span>
+        </div>
+        <div class="review-men">
+            <p>"Stylish, comfortable, and affordable. Can't ask for more!"</p>
+            <span>- Smriti Aren</span>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section newsletter-men">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest news and exclusive offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Men's Wear. All Rights Reserved.</p>
+        <div>Follow us: 
+            <a href="#" style="color: #ccc;">Instagram</a> | 
+            <a href="#" style="color: #ccc;">Facebook</a> | 
+            <a href="#" style="color: #ccc;">Twitter</a>
+        </div>
+    </footer>
+            </div>
+ 
+            <!--      Women's page      -->
+            <div id="women-page" class="page">
+            
+                <!-- Header -->
+    <header>
+        <div class="logo">Women's Wear</div>
+        <nav>
+            <a class="active" href="ecomm.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="#about">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Elegance and Style</h1>
+        <p>Discover the latest trends in women's fashion.</p>
+        <!-- <button id="shop-now-btn">Shop Now</button> -->
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="section">
+        <h2>Featured Collections</h2>
+        <div class="collections">
+            <a href="#" class="collection-item">
+                <img src="https://img.freepik.com/free-photo/beautiful-sexy-brunette-is-standing-near-pool-long-blue-separated-dress-woman-with-long-hair-perfect-body-pretty-face-make-up-palm-trees_343629-171.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Evening Gowns">
+                <p>Evening Gowns</p>
+            </a>
+            <a href="#" class="collection-item">
+                <img src="https://img.freepik.com/free-photo/stylish-woman-spending-time-summer-field_1157-36070.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Casual Wear">
+                <p>Casual Wear</p>
+            </a>
+            <a href="#" class="collection-item">
+                <img src="https://img.freepik.com/free-photo/magnificent-positive-young-stylish-woman-posing-street-wearing-feminine-trendy-dress-straw-bag-soft-sunny-colors-summer-vacation-time_291049-346.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Summer Dresses">
+                <p>Summer Dresses</p>
+            </a>
+            <a href="#" class="collection-item">
+                <img src="https://img.freepik.com/free-photo/full-shot-woman-with-headphones-roof_23-2148397252.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Winter Coats">
+                <p>Winter Coats</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="section">
+        <h2>Trending Now</h2>
+        <div class="trending">
+            <a href="#" class="trending-item">
+                <img src="https://img.freepik.com/free-photo/medium-shot-cute-girl-with-ice-skates-posing_23-2148350089.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Trending Item 1">
+                <p>Cozy Comfort</p>
+            </a>
+            <a href="#" class="trending-item">
+                <img src="https://img.freepik.com/free-photo/outdoor-fashion-portrait-stylish-pretty-young-woman-wearing-bohemian-outfit-vintage-hat-long-blonde-hairs-enjoy-free-sunny-autumn-day-good-weather-chill-relax-joy-vacation_291049-741.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Trending Item 2">
+                <p>Floral Fantasy</p>
+            </a>
+            <a href="#" class="trending-item">
+                <img src="https://img.freepik.com/free-photo/full-length-portrait-beautiful-young-woman-posing-with-shopping-bags-isolated_231208-5975.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Trending Item 3">
+                <p>Cropped & Cool</p>
+            </a>
+            <a href="#" class="trending-item">
+                <img src="https://img.freepik.com/free-photo/beautiful-young-woman-standing-front-wall-holding-colorful-shopping-bags_23-2147968443.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Trending Item 4">
+                <p>Night Out Glam</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="section brands">
+        <h2>Featured Brands</h2>
+        <div class="brand-logos">
+            <img src="https://img.freepik.com/free-photo/woman-posing_1303-3731.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Brand 1">
+            <img src="https://img.freepik.com/free-photo/young-women-with-dyed-hair-near-pink-wall_23-2149488610.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Brand 2">
+            <img src="https://img.freepik.com/free-photo/stylish-charming-young-woman-grey-coat-hat-with-red-bag-walking-street-city-centre-brunette-hair-elegant-woman-fashionable-model-smiling-cheerful-mood_197531-2161.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Brand 3">
+            <img src="https://img.freepik.com/free-photo/full-shot-beautiful-japanese-girl_23-2148665355.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid" alt="Brand 4">
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review">
+            <p>"Beautiful dresses and top-notch service. I love shopping here!"</p>
+            <span>- Rashmika</span>
+        </div>
+        <div class="review">
+            <p>"Trendy and affordable. I always find something perfect for any occasion."</p>
+            <span>- Kiara</span>
+        </div>
+        <div class="review">
+            <p>"Fast shipping and great quality clothes. Will buy again!"</p>
+            <span>- Pawni</span>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section newsletter">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest fashion news and exclusive offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Women's Wear. All Rights Reserved.</p>
+        <div>Follow us: 
+            <a href="https://www.instagram.com/reach_zenith_heights" style="color: #ccc;">Instagram</a> | 
+            <a href="https://www.facebook.com/profile.php?id=61567017129342" style="color: #ccc;">Facebook</a> | 
+            <a href="https://x.com/reachzenit58068" style="color: #ccc;">Twitter</a>
+        </div>
+    </footer>
+            </div>
+        </main>
+    </div>
+    <script src="/js/fashion.js"></script>
+    <script src="/js/women.js"></script>
+    <script src="/js/men.js"></script>
+</body>
+</html>

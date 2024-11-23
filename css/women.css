@@ -1,0 +1,286 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://img.freepik.com/free-photo/annoyed-tired-asian-woman-making-facepalm-slap-forehad-roll-eyes-disappointed-standing-wh_1258-153598.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid'); /* Replace with an actual path */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 50px 30px;
+}
+
+.collections, .trending {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.collection-item, .trending-item {
+    flex: 0 0 22%;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img, .trending-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.brands .brand-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.brands img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.brands img:hover {
+    filter: none;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    font-style: italic;
+}
+
+.review span {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #555;
+}
+
+.collection-item, .trending-item {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.collection-item img, .trending-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection-item:hover, .trending-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.collection-item:hover img, .trending-item:hover img {
+    transform: scale(1.1);
+}
+
+.collection-item p, .trending-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* General Image Styling */
+img {
+    max-width: 100%; /* Ensures images do not overflow their container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+}
+
+/* Hero Section Image */
+.hero {
+
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the background image */
+}
+
+/* Collection and Trending Items */
+.collection-item img, .trending-item img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crops excess content for a uniform look */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.collection-item:hover img, .trending-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Brand Logos */
+.brands .brand-logos img {
+    max-width: 100px; /* Constrain the size of logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center logos */
+    display: inline-block;
+}
+
+/* Adjusting Modal Images (if any) */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Featured Collections & Trending Now Sections */
+.collections, .trending {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.collection-item, .trending-item {
+    flex: 1 1 calc(25% - 20px); /* Adjust width for 4 items per row */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .collection-item, .trending-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+
+    .brands .brand-logos img {
+        max-width: 80px; /* Resize logos for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .collection-item, .trending-item {
+        flex: 1 1 100%; /* 1 item per row on mobile */
+    }
+}

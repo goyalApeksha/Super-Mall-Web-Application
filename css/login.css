@@ -1,0 +1,143 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Forms */
+.form-container {
+    padding: 30px;
+}
+
+.form {
+    /* display: none; */
+}
+
+.form.active {
+    display: block;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+button.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.btn:hover {
+    background: #43a047;
+}
+
+.switch {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.switch a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+/* Social Buttons */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.google {
+    background: #db4437;
+    color: #fff;
+}
+
+.google:hover {
+    background: #c33728;
+}
+
+.facebook {
+    background: #4267B2;
+    color: #fff;
+}
+
+.facebook:hover {
+    background: #36589E;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffb6c1;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://img.freepik.com/free-photo/children-shoes-notebook-back-school-concept_155003-4489.jpg?ga=GA1.1.1460810920.1718382257&semt=ais_hybrid') no-repeat center center/cover;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e67345;
+}
+
+.categories-section, .arrivals-section, .reviews-section, .newsletter-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.categories, .arrivals {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-item, .arrival-item {
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.category-item img, .arrival-item img {
+    width: 100%;
+    height: auto;
+}
+
+.category-item:hover, .arrival-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #ffb6c1;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Search Results</h1>
+        <div class="search-bar">
+            <input type="text" id="search-query" placeholder="Search products..." />
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+
+    <main class="results-section">
+        <h2 id="result-header">Results for: "<span id="query-term"></span>"</h2>
+        <div id="results-container" class="results-container">
+            <!-- Search results will be injected dynamically -->
+        </div>
+        <p id="no-results" class="no-results">No results found for your search. Please try a different query.</p>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Super Mall. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/search.js"></script>
+</body>
+</html>
